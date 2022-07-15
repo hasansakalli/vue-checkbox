@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic User Input</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <section id="VueCheckBox">
+      
+        <div class="grups">
+            <h3>Vue checkbox</h3>
+        <div class="form-check form-switch ">
+            <input class="form-check-input" type="checkbox" v-model="checked1">
+            <div class="box" :class="{box: true, box1: checked1 }" ></div>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox"  v-model="checked2" >
+            <div class="box":class="{box: true, box2: checked2 }" ></div>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox"  v-model="checked3" >
+            <div class="box":class="{box: true, box3: checked3 }" ></div>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox"  v-model="checked4" >
+            <div class="box":class="{box: true, box4: checked4 }" ></div>
+          </div>
+        </div>
+
+
+      </section>
+
+    <script>
+          const cssVue = Vue.createApp({
+            
+        data() {
+          return {
+           checked1:false,
+           checked2:false,
+           checked3:false,
+           checked4:false,
+           checked:false,
+                         
+          };
+        },    
+        methods: {
+
+        },
+     });
+     cssVue.mount("#VueCheckBox");
+    </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
