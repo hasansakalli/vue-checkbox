@@ -83,3 +83,15 @@ h3{
     text-align: center;
     color: rgba(128, 128, 128, 0.801);
 }
+.bg1{
+    background-color: rgb(127, 159, 255);
+}
+.bg2{
+    background-color: rgb(127, 255, 165);
+}
+.bg3{
+    background-color: red;
+}
+.bg4{
+    background-color: rgb(193, 216, 11);
+}
